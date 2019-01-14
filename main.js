@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 http.createServer(function(request, response) {
   console.log("Server is connected.");
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.write("Hello world");
+  response.write("腦大阿囉");
   response.end();
 }).listen(PORT);
 console.log("Server is created.");
