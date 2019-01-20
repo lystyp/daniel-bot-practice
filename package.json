@@ -1,7 +1,6 @@
 {
   "name": "daniel-bot-practice",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
@@ -16,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/lystyp/daniel-bot-practice/issues"
   },
-  "homepage": "https://github.com/lystyp/daniel-bot-practice#readme"
+  "homepage": "https://github.com/lystyp/daniel-bot-practice#readme",
+  "dependencies": {
+    "linebot": "^1.4.1"
+  },
+  "devDependencies": {},
+  "description": ""
 }
