@@ -1,11 +1,3 @@
-Day 1
-20190114
-建了一個專案，練習把github跟heroku綁一起
-
-20190119
-建好了一個非常陽春的猜數字
-用ngrok測試OK
-
 20190120
 研究怎麼搬到heroku
 有兩個東西要研究
@@ -36,4 +28,15 @@ Heroku的Dashboard裡的Settings頁面，找到Config Variables這個大項，
 
 
 4.看丟在heroku上的server的log
-指令 :　logs -t  -a daniel-bot-practice
+指令 :　heroku logs -t  -a daniel-bot-practice
+
+5.研究怎麼架Docker
+要裝兩個東西 
+>boot2docker
+https://joshhu.gitbooks.io/docker_theory_install/content/DockerBible/mac_oswindowsboot2docker.html
+照這個網站做跑步起來不知為何
+(建議去官網找新的)
+>Docker Toolbox
+下載 : https://docs.docker.com/toolbox/toolbox_install_windows/
+說明 : https://docs.docker.com/docker-for-windows/
+照這個有跑起來，但這個建的container不知道是for window還是for linux
