@@ -34,7 +34,7 @@ bot.on('message', function (event) {
       console.log("Reply success.");
     }).catch(function (error) {
       // 當訊息回傳失敗後的處理
-      console.log("Reply Fail.");
+      console.log("Reply Fail, error : " + String(error));
     });
   }
 });
