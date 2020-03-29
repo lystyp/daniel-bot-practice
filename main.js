@@ -82,6 +82,14 @@ function getReply(s){
     return bad[parseInt(Math.random()*3)]
   }
 
+  if(s == '你走開'){
+    return "你才走開 ˋOˊ"
+  }
+
+  if(s == '陳怡君'){
+    return "你走開"
+  }
+
   if (s == KEYWORD_GAME_START){
     initGameStatus();
     return reply_str.guess_in_range.replace('@up', gameStatusManager.range.up).replace('@down', gameStatusManager.range.down)
