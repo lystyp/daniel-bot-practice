@@ -62,6 +62,9 @@ var reply_str = {
   got_the_bomb : '爆啦~~~~~~' 
 }
 
+var good = ["我做好了，但是還是沒有獎勵", "什麼獎勵?", "你不能自己給自己鼓勵嗎?"];
+var bad = ["我做好了，但是還是沒有懲罰...", "你這要求已經是在懲罰我了", "給你99懲罰表"];
+
 function getReply(s){
   if(s == '阿保'){
     return '彰化彭于晏'
@@ -69,6 +72,14 @@ function getReply(s){
 
   if(s == '哈囉'){
     return '有事?'
+  }
+  
+  if(s == '我要獎勵'){
+    return good[parseInt(Math.random()*3)]
+  }
+
+  if(s == '我要懲罰'){
+    return bad[parseInt(Math.random()*3)]
   }
 
   if (s == KEYWORD_GAME_START){
@@ -95,6 +106,7 @@ function getReply(s){
     } 
   } 
 }
+
 
 function initGameStatus(){
   gameStatusManager.isStart = true
