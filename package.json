@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/lystyp/daniel-bot-practice#readme",
   "dependencies": {
-    "linebot": "^1.4.1"
+    "linebot": "^1.5.3"
   },
   "devDependencies": {},
   "description": ""
