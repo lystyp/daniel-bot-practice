@@ -67,6 +67,10 @@ function getReply(s){
     return '彰化彭于晏'
   }
 
+  if(s == '哈囉'){
+    return '有事?'
+  }
+
   if (s == KEYWORD_GAME_START){
     initGameStatus();
     return reply_str.guess_in_range.replace('@up', gameStatusManager.range.up).replace('@down', gameStatusManager.range.down)
